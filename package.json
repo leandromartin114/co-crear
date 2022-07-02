@@ -2,7 +2,7 @@
 	"name": "cocrear",
 	"version": "1.0.0",
 	"license": "MIT",
-	"source": "index.html",
+	"source": "src/index.html",
 	"scripts": {
 		"dev": "parcel",
 		"build": "parcel build --dist-dir build --public-url /co-crear",

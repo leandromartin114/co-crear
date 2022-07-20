@@ -14,7 +14,6 @@ export function initCapaSkills(params) {
             <div class="capa-container">
                 <h2 class="title">CAPACITACIÓN Y DESARROLLO</h2>
                 <div class="capa-content">
-
                     <div class="talleres-container">
                         <div class="talleres">
                             <div class="taller">TALLER 1 - COMUNICACIÓN EFECTIVA</div>

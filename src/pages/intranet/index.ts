@@ -39,6 +39,8 @@ export function initTuIntranet(params) {
                     <li>Liquidaciones de Sueldos</li>
                     <li>Control de Ausentismo</li>
                     <li>Auditorías</li>
+                    <li>Bienestar Organizacional</li>
+                    <li>Tendencias</li>
                 </ul>
             </div>
         </div>
@@ -121,6 +123,7 @@ export function initTuIntranet(params) {
                         color: rgb(20, 199, 199);
                         font-weight: 700;
                         margin-bottom: 10px;
+                        cursor: pointer;
                     }
                     .accesos-container{
                         width: 50%;
@@ -140,8 +143,12 @@ export function initTuIntranet(params) {
                 `;
 	div.appendChild(style);
 	const homeEl = div.querySelector(".home");
-	homeEl.addEventListener("click", () => {
+	homeEl?.addEventListener("click", () => {
 		params.goTo("/home");
+	});
+	const button = div.querySelector(".button");
+	button?.addEventListener("click", () => {
+		params.goTo("/capa-skills");
 	});
 	return div;
 }

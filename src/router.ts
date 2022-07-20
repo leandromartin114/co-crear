@@ -10,6 +10,7 @@
 import { initAboutUs } from "./pages/about-us";
 import { initHomePage } from "./pages/home";
 import { initTuIntranet } from "./pages/intranet";
+import { initCapaSkills } from "./pages/capa-skills";
 const BASE_PATH = "/co-crear";
 
 function isGithubPages() {
@@ -20,6 +21,7 @@ export function initRouter(container: Element) {
 		{ path: /\/home/, component: initHomePage },
 		{ path: /\/about-us/, component: initAboutUs },
 		{ path: /\/tu-intra/, component: initTuIntranet },
+		{ path: /\/capa-skills/, component: initCapaSkills },
 	];
 	function goTo(path) {
 		const completePath = isGithubPages() ? BASE_PATH + path : path;
